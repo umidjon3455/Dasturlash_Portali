@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BizNews - Category</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+        <a href="{% url 'home' %}" class="navbar-brand">
+            <h1 class="m-0 display-4 text-uppercase text-primary">
+                Biz<span class="text-white font-weight-normal">News</span>
+            </h1>
+        </a>
+
+        <div class="collapse navbar-collapse justify-content-between">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                <a href="{% url 'category' %}" class="nav-item nav-link active">Category</a>
+                <a href="{% url 'single' %}" class="nav-item nav-link">Single</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- CONTENT -->
+<div class="container mt-5">
+
+    <h2 class="text-uppercase font-weight-bold mb-4">Category: Business</h2>
+
+    <div class="row">
+
+        <!-- NEWS CARD -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="{% static 'img/news-700x435-1.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                    <p class="card-text">
+                        Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita.
+                    </p>
+                    <a href="{% url 'single' %}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="{% static 'img/news-700x435-2.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Another Business News</h5>
+                    <p class="card-text">
+                        Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna rebum clita.
+                    </p>
+                    <a href="{% url 'single' %}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="container-fluid bg-dark text-white mt-5 p-4 text-center">
+    © 2026 BizNews. All Rights Reserved.
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
